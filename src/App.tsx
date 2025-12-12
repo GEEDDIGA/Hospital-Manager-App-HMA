@@ -1,11 +1,11 @@
-import { useState } from 'react'
+import { FormEvent, useState } from 'react'
 import './App.css'
 
 function App() {
-  const [email, setEmail] = useState('')
-  const [submitted, setSubmitted] = useState(false)
+  const [email, setEmail] = useState<string>('')
+  const [submitted, setSubmitted] = useState<boolean>(false)
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     if (email) {
       setSubmitted(true)
@@ -30,7 +30,7 @@ function App() {
             type="email"
             placeholder="Enter your email"
             value={email}
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={(e) => setEmail(e.currentTarget.value)}
             required
           />
           <button type="submit">Notify Me</button>
