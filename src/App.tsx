@@ -42,6 +42,26 @@ function App() {
           </div>
         )}
 
+              {/* Product Showcase Section */}
+      <div className="product-showcase">
+        <h2>Featured Product</h2>
+        <div className="product-card">
+          <h3>AI Prompt Pack for Business Owners</h3>
+          <p className="product-description">
+            50 ChatGPT Prompts designed to boost your productivity and save time on daily tasks.
+          </p>
+          <div className="product-features">
+            <span className="badge">50 Prompts</span>
+            <span className="badge">Instant Access</span>
+            <span className="badge">No Subscription</span>
+          </div>
+          <p className="product-price">$19.99</p>
+          <a href="https://gumroad.com/l/ctezr" target="_blank" rel="noopener noreferrer" className="cta-button">
+            Get Prompts Now →
+          </a>
+        </div>
+      </div>
+
         <div className="features">
           <div className="feature">
             <h3>Quality</h3>
