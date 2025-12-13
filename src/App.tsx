@@ -121,15 +121,15 @@ function App() {
               message: message,
               reply_to: email
             }
-          })
+          )
         }).then(() => {
           alert('Thank you for your message! We\'ll get back to you soon.');
           e.currentTarget.reset();
         }).catch(err => {
           console.error('Error sending message:', err);
           alert('Error sending message. Please try again.');
-        });
-      }}>
+          }
+        );}>
         <input type="text" name="name" placeholder="Your Name" required />
         <input type="email" name="email" placeholder="Your Email" required />
         <textarea name="message" placeholder="Your Message" rows={5} required></textarea>
