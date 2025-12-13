@@ -129,7 +129,7 @@ function App() {
           console.error('Error sending message:', err);
           alert('Error sending message. Please try again.');
           }
-        );}>
+          }})>
         <input type="text" name="name" placeholder="Your Name" required />
         <input type="email" name="email" placeholder="Your Email" required />
         <textarea name="message" placeholder="Your Message" rows={5} required></textarea>
