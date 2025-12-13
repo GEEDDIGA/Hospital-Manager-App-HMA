@@ -137,6 +137,9 @@ function App() {
       </form>
      </div>
      </div>
+             <footer style={{ backgroundColor: '#f5f5f5', padding: '20px', marginTop: '40px', textAlign: 'center', fontSize: '12px', color: '#666' }}>
+        <p><strong>Disclaimer:</strong> Goolle Shop is an independent e-commerce business. "Goolle" is a Somali word meaning a person who handles or manages commerce. This website is not affiliated with Google Inc. in any way.</p>
+      </footer>
      </div>
   )
 }
