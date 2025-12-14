@@ -35,22 +35,7 @@ function HomePage() {
         <h1>Welcome to Goolle Shop</h1>
         <p className="tagline">Discover Quality Products at Great Prices</p>
         
-        <div className="hero-section">
- <p>We're ready! Order the premium digital products you need from us now, and discover what's waiting for you.</p>        </div>
-        <form onSubmit={handleSubmit} className="email-form">
-          <input
-            type="email"
-            placeholder="Enter your email"
-            value={email}
-            onChange={(e) => setEmail(e.currentTarget.value)}
-            required
-          />
-          <button type="submit">Notify Me</button>
-        </form>
-        {submitted && (
-          <div className="success-message">
-            Thanks for subscribing! We'll be in touch soon.
-          </div>
+
         )}
         {/* Product Showcase Section */}
         <div className="product-showcase">
