@@ -4,7 +4,7 @@ import PayPalCheckout from './PayPalCheckout'
 import ThankYou from './ThankYou'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 // PayPal Payment Links
-const PAYPAL_LINKS = {
+export const PAYPAL_LINKS = {
   aiPrompts: 'https://www.paypal.com/ncp/links/KBNRKDUS8XW4G',
   contentGuide: 'https://www.paypal.com/ncp/links/32TXF98GC9L8J',
   hospitalManager: 'https://www.paypal.com/ncp/links/XGUCFWJ3A47AY'
