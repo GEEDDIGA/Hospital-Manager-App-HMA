@@ -1,4 +1,3 @@
-import { FormEvent, useState } from 'react'
 import './App.css'
 import ThankYou from './ThankYou'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
@@ -20,16 +19,6 @@ export const STRIPE_LINKS = {
 // HomePage Component
 function HomePage() {
   const [email, setEmail] = useState<string>('')
-  const [submitted, setSubmitted] = useState<boolean>(false)
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault()
-    if (email) {
-      setSubmitted(true)
-      setEmail('')
-      setTimeout(() => setSubmitted(false), 3000)
-    }
-  }
-  return (
     <div>
       <div className="content">
         <h1>Welcome to Goolle Shop</h1>
