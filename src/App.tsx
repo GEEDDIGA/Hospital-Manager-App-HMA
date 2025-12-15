@@ -34,6 +34,7 @@ function HomePage() {
       <div className="content">
         <h1>Welcome to Goolle Shop</h1>
         <p className="tagline">Discover Quality Products at Great Prices</p>
+                  <p>Work Smarter, Not Harder. Digitally.</p>
         
 
         
