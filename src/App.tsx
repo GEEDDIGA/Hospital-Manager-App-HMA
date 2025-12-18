@@ -1,15 +1,8 @@
 import './App.css'
-import { useState } from 'react'
 import ThankYou from './ThankYou'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
-// Payment Links
-export const PAYPAL_LINKS = {
-  aiPrompts: 'https://www.paypal.com/ncp/links/KBNRKDUS8XW4G',
-  contentGuide: 'https://www.paypal.com/ncp/links/32TXF98GC9L8J',
-  hospitalManager: 'https://www.paypal.com/ncp/links/XGUCFWJ3A47AY'
-}
-
+// Stripe Payment Links
 export const STRIPE_LINKS = {
   aiPrompts: 'https://buy.stripe.com/test_8x2dR9fqMfIZ9ss9B94ko00',
   contentGuide: 'https://buy.stripe.com/test_fZu6cH0vS8gxcEE4P4ko01',
@@ -17,8 +10,6 @@ export const STRIPE_LINKS = {
 }
 
 function HomePage() {
-  const [email, setEmail] = useState<string>('')
-
   return (
     <div>
       <div className="content">
