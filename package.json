@@ -1,5 +1,6 @@
 {
   "name": "hospital-manager-app",
+    "author": {"name": "GEEDDIGA", "email": "geeddiga@example.com"},
   "private": true,
   "version": "1.0.0",
   "type": "module",
